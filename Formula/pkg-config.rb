@@ -5,6 +5,7 @@ class PkgConfig < Formula
   mirror "http://fresh-center.net/linux/misc/pkg-config-0.29.2.tar.gz"
   sha256 "6fc69c01688c9458a57eb9a1664c9aba372ccda420a02bf4429fe610e7e7d591"
   license "GPL-2.0-or-later"
+  revision 3
 
   livecheck do
     url "https://pkg-config.freedesktop.org/releases/"
@@ -13,11 +14,10 @@ class PkgConfig < Formula
 
   bottle do
     root_url "https://github.com/gaborcsardi/homebrew-cran/releases/download/pkg-config-0.29.2"
-    revision 3
-    sha256 arm64_big_sur: "e5f21c143b41c5b4a04c2081e8ea414cb20a703d10a458c9e9854ebde9581d04"
-    sha256 ventura:       "66b70f5fbab5395c9c3d307e349dec015320fec13027f55a07878c70752572a1"
-    sha256 monterey:      "3992e9cd55debc4e9559dd8cc067c61cd2fd3783e72e5c2e077db4ce17023712"
-    sha256 big_sur:       "ddd5bc2cc2402d721e954d35d7a0f9aa2151ce9dde2784e6351b8cc849e29a85"
+    sha256 arm64_big_sur: "ffd4491f62201d14b7eca6beff954a2ab265351589cd5b3b79b8bbb414485574"
+    sha256 ventura:       "c44b1544815518726d280d92d6f6df09bd45e41ad20fd43424725c1c20760be8"
+    sha256 monterey:      "a6ba80711f98b65d8a2bf2c9278540860415e9b5e545da338a4d94f39d119285"
+    sha256 big_sur:       "0040b6ebe07f60549800b211343fd5fb3cf83c866d9f62e40f5fb2f38b71e161"
   end
 
   conflicts_with "pkgconf", because: "both install `pkg.m4` file"

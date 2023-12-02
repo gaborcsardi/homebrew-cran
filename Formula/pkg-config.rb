@@ -5,7 +5,6 @@ class PkgConfig < Formula
   mirror "http://fresh-center.net/linux/misc/pkg-config-0.29.2.tar.gz"
   sha256 "6fc69c01688c9458a57eb9a1664c9aba372ccda420a02bf4429fe610e7e7d591"
   license "GPL-2.0-or-later"
-  revision 3
 
   livecheck do
     url "https://pkg-config.freedesktop.org/releases/"
